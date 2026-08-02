@@ -54,12 +54,14 @@ const Header = () => {
                     </div>
                   </Link>
                 </DropdownMenuItem>
-                <DropdownMenuItem className="flex items-start gap-3 py-2">
-                  <Sparkles className="h-4 w-4 mt-0.5 text-emerald-600" />
-                  <div>
-                    <div className="text-sm font-medium">Build Skill Profile</div>
-                    <div className="text-xs text-slate-500">Import from LinkedIn / GitHub</div>
-                  </div>
+                <DropdownMenuItem asChild>
+                  <Link to="/candidates/signup" className="flex items-start gap-3 py-2">
+                    <Sparkles className="h-4 w-4 mt-0.5 text-emerald-600" />
+                    <div>
+                      <div className="text-sm font-medium">Build Skill Profile</div>
+                      <div className="text-xs text-slate-500">Import from LinkedIn / GitHub</div>
+                    </div>
+                  </Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem className="flex items-start gap-3 py-2">
                   <BookOpen className="h-4 w-4 mt-0.5 text-emerald-600" />
@@ -85,12 +87,14 @@ const Header = () => {
                     </div>
                   </Link>
                 </DropdownMenuItem>
-                <DropdownMenuItem className="flex items-start gap-3 py-2">
-                  <Building2 className="h-4 w-4 mt-0.5 text-emerald-600" />
-                  <div>
-                    <div className="text-sm font-medium">Post a Job</div>
-                    <div className="text-xs text-slate-500">AI-crafted job descriptions</div>
-                  </div>
+                <DropdownMenuItem asChild>
+                  <Link to="/employers/post-job" className="flex items-start gap-3 py-2">
+                    <Building2 className="h-4 w-4 mt-0.5 text-emerald-600" />
+                    <div>
+                      <div className="text-sm font-medium">Post a Job</div>
+                      <div className="text-xs text-slate-500">AI-crafted job descriptions</div>
+                    </div>
+                  </Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem className="flex items-start gap-3 py-2">
                   <Sparkles className="h-4 w-4 mt-0.5 text-emerald-600" />
@@ -113,9 +117,11 @@ const Header = () => {
               <Globe className="h-4 w-4" /> EN
             </button>
             <Button variant="ghost" className="text-slate-700">Sign in</Button>
-            <Button className="bg-slate-900 hover:bg-slate-800 text-white rounded-full px-5">
-              Get started
-            </Button>
+            <Link to="/candidates/signup">
+              <Button className="bg-slate-900 hover:bg-slate-800 text-white rounded-full px-5">
+                Get started
+              </Button>
+            </Link>
           </div>
 
           {/* Mobile toggle */}

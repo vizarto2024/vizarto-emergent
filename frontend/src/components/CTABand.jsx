@@ -29,7 +29,7 @@ export const CTABand = () => (
                 Find a job <ArrowRight className="h-4 w-4 ml-1" />
               </Button>
             </Link>
-            <Link to="/candidates">
+            <Link to="/employers/post-job">
               <Button size="lg" variant="outline" className="rounded-full px-7 bg-transparent text-white border-white/30 hover:bg-white/10 hover:text-white w-full sm:w-auto">
                 Post a job
               </Button>

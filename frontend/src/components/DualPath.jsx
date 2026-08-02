@@ -52,9 +52,11 @@ const DualPath = () => {
                     Explore opportunities <ArrowRight className="h-4 w-4 ml-1" />
                   </Button>
                 </Link>
-                <Button variant="outline" className="rounded-full px-6 border-slate-300">
-                  Build free profile
-                </Button>
+                <Link to="/candidates/signup">
+                  <Button variant="outline" className="rounded-full px-6 border-slate-300">
+                    Build free profile
+                  </Button>
+                </Link>
               </div>
             </div>
           </div>
@@ -93,9 +95,11 @@ const DualPath = () => {
                     Explore candidates <ArrowRight className="h-4 w-4 ml-1" />
                   </Button>
                 </Link>
-                <Button variant="outline" className="rounded-full px-6 bg-transparent text-white border-white/30 hover:bg-white/10 hover:text-white">
-                  Post a job
-                </Button>
+                <Link to="/employers/post-job">
+                  <Button variant="outline" className="rounded-full px-6 bg-transparent text-white border-white/30 hover:bg-white/10 hover:text-white">
+                    Post a job
+                  </Button>
+                </Link>
               </div>
 
               <div className="mt-8 pt-6 border-t border-white/10 grid grid-cols-3 gap-4 text-center">

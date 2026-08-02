@@ -5,6 +5,8 @@ import Landing from "./pages/Landing";
 import JobsPage from "./pages/JobsPage";
 import CandidatesPage from "./pages/CandidatesPage";
 import PricingPage from "./pages/PricingPage";
+import PostJobPage from "./pages/PostJobPage";
+import CandidateSignupPage from "./pages/CandidateSignupPage";
 import { Toaster } from "./components/ui/toaster";
 
 function App() {
@@ -20,6 +22,8 @@ function App() {
           <Route path="/jobs" element={<JobsPage />} />
           <Route path="/candidates" element={<CandidatesPage />} />
           <Route path="/pricing" element={<PricingPage />} />
+          <Route path="/employers/post-job" element={<PostJobPage />} />
+          <Route path="/candidates/signup" element={<CandidateSignupPage />} />
         </Routes>
       </BrowserRouter>
       <Toaster />

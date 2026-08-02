@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { Button } from "../components/ui/button";
@@ -7,10 +8,25 @@ import { Tabs, TabsList, TabsTrigger, TabsContent } from "../components/ui/tabs"
 import { Badge } from "../components/ui/badge";
 import { Check, Sparkles, HelpCircle } from "lucide-react";
 import { candidatePlans, employerPlans, pricingFAQ } from "../mock/pricing";
+import NotifyDialog from "../components/NotifyDialog";
+import PlanComparison from "../components/PlanComparison";
 
 const PricingPage = () => {
   const [annual, setAnnual] = useState(false);
   const [tab, setTab] = useState("candidate");
+  const [notifyPlan, setNotifyPlan] = useState(null);
+  const navigate = useNavigate();
+
+  const openNotify = (plan) => setNotifyPlan(plan);
+  const handleCta = (plan) => {
+    if (plan.priceMonthly === 0) {
+      // Free plan → signup
+      if (tab === "candidate") navigate("/candidates/signup");
+      else navigate("/employers/post-job");
+    } else {
+      openNotify(plan);
+    }
+  };
 
   const heading =
     tab === "candidate"
@@ -89,14 +105,17 @@ const PricingPage = () => {
           {tab === "candidate" ? (
             <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
               {candidatePlans.map((p) => (
-                <PlanCard key={p.name} plan={p} annual={annual} />
+                <PlanCard key={p.name} plan={p} annual={annual} onCta={handleCta} />
               ))}
             </div>
           ) : (
-            <EmployerGrid annual={annual} />
+            <EmployerGrid annual={annual} onCta={handleCta} />
           )}
         </div>
       </section>
+
+      {/* Comparison */}
+      <PlanComparison audience={tab} />
 
       {/* Comparison strip */}
       <section className="py-12 bg-slate-50/60 border-y border-slate-100">
@@ -143,11 +162,18 @@ const PricingPage = () => {
       </section>
 
       <Footer />
+
+      <NotifyDialog
+        open={!!notifyPlan}
+        onOpenChange={(v) => !v && setNotifyPlan(null)}
+        plan={notifyPlan}
+        audience={tab}
+      />
     </div>
   );
 };
 
-const PlanCard = ({ plan, annual, wide = false }) => {
+const PlanCard = ({ plan, annual, onCta, wide = false }) => {
   const isFree = plan.priceMonthly === 0;
   const isCustom = plan.custom;
   const hidden = plan.hidden;
@@ -206,6 +232,7 @@ const PlanCard = ({ plan, annual, wide = false }) => {
         </div>
 
         <Button
+          onClick={() => onCta?.(plan)}
           className={`mt-6 w-full rounded-full h-11 font-semibold ${
             plan.popular
               ? "bg-emerald-600 hover:bg-emerald-700 text-white"
@@ -237,7 +264,7 @@ const PlanCard = ({ plan, annual, wide = false }) => {
   );
 };
 
-const EmployerGrid = ({ annual }) => {
+const EmployerGrid = ({ annual, onCta }) => {
   const basic = employerPlans.find((p) => p.slug === "basic");
   const paid = employerPlans.filter((p) => ["starter", "growth", "premium"].includes(p.slug));
   const enterprise = employerPlans.find((p) => p.slug === "enterprise");
@@ -245,17 +272,17 @@ const EmployerGrid = ({ annual }) => {
   return (
     <div className="space-y-6">
       {/* Basic - wide */}
-      {basic && <PlanCard plan={basic} annual={annual} wide />}
+      {basic && <PlanCard plan={basic} annual={annual} onCta={onCta} wide />}
 
       {/* Paid tiers */}
       <div className="grid md:grid-cols-3 gap-6">
         {paid.map((p) => (
-          <PlanCard key={p.slug} plan={p} annual={annual} />
+          <PlanCard key={p.slug} plan={p} annual={annual} onCta={onCta} />
         ))}
       </div>
 
       {/* Enterprise - wide */}
-      {enterprise && <PlanCard plan={enterprise} annual={annual} wide />}
+      {enterprise && <PlanCard plan={enterprise} annual={annual} onCta={onCta} wide />}
     </div>
   );
 };
