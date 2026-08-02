@@ -63,8 +63,8 @@ const CandidatesPage = () => {
               onClick={() => setOnlyVerified(!onlyVerified)}
               className={`inline-flex items-center gap-2 rounded-full px-3.5 py-1.5 text-sm border transition-colors ${
                 onlyVerified
-                  ? "bg-brand-600 text-white border-brand-600"
-                  : "bg-white text-slate-700 border-slate-200 hover:border-brand-400"
+                  ? "bg-emerald-600 text-white border-emerald-600"
+                  : "bg-white text-slate-700 border-slate-200 hover:border-emerald-400"
               }`}
             >
               <ShieldCheck className="h-4 w-4" /> Verified only

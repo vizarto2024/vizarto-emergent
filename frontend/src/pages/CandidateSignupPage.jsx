@@ -149,7 +149,7 @@ const CandidateSignupPage = () => {
         <Header />
         <section className="py-20">
           <div className="mx-auto max-w-xl px-5 text-center">
-            <div className="mx-auto h-16 w-16 rounded-2xl bg-brand-500 text-white flex items-center justify-center">
+            <div className="mx-auto h-16 w-16 rounded-2xl bg-emerald-500 text-white flex items-center justify-center">
               <Check className="h-8 w-8" strokeWidth={3} />
             </div>
             <h1 className="font-display mt-6 text-4xl font-bold text-slate-900">
@@ -159,8 +159,8 @@ const CandidateSignupPage = () => {
               We're building your skill graph and matching you to open roles right now.
               Expect your first shortlist within an hour.
             </p>
-            <div className="mt-6 rounded-2xl border border-brand-200 bg-brand-50/50 p-4 text-left">
-              <div className="text-xs font-semibold uppercase tracking-widest text-brand-700 mb-2">
+            <div className="mt-6 rounded-2xl border border-emerald-200 bg-emerald-50/50 p-4 text-left">
+              <div className="text-xs font-semibold uppercase tracking-widest text-emerald-700 mb-2">
                 Profile summary
               </div>
               <div className="text-sm text-slate-800">
@@ -580,21 +580,21 @@ const ResumeStep = ({ form, setField, errors }) => {
         </label>
       </Field>
 
-      <div className="rounded-2xl border border-brand-200 bg-brand-50/50 p-4">
-        <div className="text-xs font-semibold uppercase tracking-widest text-brand-700">
+      <div className="rounded-2xl border border-emerald-200 bg-emerald-50/50 p-4">
+        <div className="text-xs font-semibold uppercase tracking-widest text-emerald-700">
           What happens next
         </div>
-        <ul className="mt-2 space-y-1.5 text-sm text-brand-900">
+        <ul className="mt-2 space-y-1.5 text-sm text-emerald-900">
           <li className="flex items-start gap-2">
-            <Check className="h-4 w-4 mt-0.5 text-brand-600 shrink-0" />
+            <Check className="h-4 w-4 mt-0.5 text-emerald-600 shrink-0" />
             We build your skill graph and match you to open roles.
           </li>
           <li className="flex items-start gap-2">
-            <Check className="h-4 w-4 mt-0.5 text-brand-600 shrink-0" />
+            <Check className="h-4 w-4 mt-0.5 text-emerald-600 shrink-0" />
             You'll get a shortlist within an hour, ranked by fit.
           </li>
           <li className="flex items-start gap-2">
-            <Check className="h-4 w-4 mt-0.5 text-brand-600 shrink-0" />
+            <Check className="h-4 w-4 mt-0.5 text-emerald-600 shrink-0" />
             Only employers you approve can message you.
           </li>
         </ul>

@@ -97,7 +97,7 @@ const NotifyDialog = ({ open, onOpenChange, plan, audience }) => {
           </>
         ) : (
           <div className="py-4 text-center">
-            <div className="mx-auto h-14 w-14 rounded-2xl bg-brand-500 text-white flex items-center justify-center mb-4">
+            <div className="mx-auto h-14 w-14 rounded-2xl bg-emerald-500 text-white flex items-center justify-center mb-4">
               <CheckCircle2 className="h-7 w-7" />
             </div>
             <h3 className="font-display text-2xl font-bold text-slate-900">

@@ -137,7 +137,7 @@ const PostJobPage = () => {
         <Header />
         <section className="py-20">
           <div className="mx-auto max-w-xl px-5 text-center">
-            <div className="mx-auto h-16 w-16 rounded-2xl bg-brand-500 text-white flex items-center justify-center">
+            <div className="mx-auto h-16 w-16 rounded-2xl bg-emerald-500 text-white flex items-center justify-center">
               <Check className="h-8 w-8" strokeWidth={3} />
             </div>
             <h1 className="font-display mt-6 text-4xl font-bold text-slate-900">
@@ -597,11 +597,11 @@ const ReviewStep = ({ form }) => {
       <ReviewRow label="Experience" value={`${form.minExp}–${form.maxExp} yrs · ${form.seniority}`} />
       <ReviewRow label="Compensation" value={`${salary}${form.equity ? " · Equity" : ""}`} />
       <ReviewRow label="Description" value={form.description || "—"} multi />
-      <div className="rounded-xl bg-brand-50 border border-brand-200 p-4 text-sm text-brand-900">
+      <div className="rounded-xl bg-emerald-50 border border-emerald-200 p-4 text-sm text-emerald-900">
         <div className="font-semibold flex items-center gap-2">
           <Sparkles className="h-4 w-4" /> AI matching starts instantly
         </div>
-        <div className="mt-1 text-brand-800">
+        <div className="mt-1 text-emerald-800">
           Once you publish, we'll rank 85,000+ candidates and surface your top matches within minutes.
         </div>
       </div>

@@ -139,7 +139,7 @@ export const JobCard = ({ job }) => {
                 strokeLinecap="round"
               />
             </svg>
-            <div className="absolute inset-0 flex items-center justify-center text-[10px] font-bold text-brand-700">
+            <div className="absolute inset-0 flex items-center justify-center text-[10px] font-bold text-emerald-700">
               {job.match}
             </div>
           </div>

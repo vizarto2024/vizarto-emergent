@@ -92,7 +92,7 @@ const Cell = ({ value }) => {
   if (value === true) {
     return (
       <div className="flex justify-center">
-        <div className="h-6 w-6 rounded-full bg-brand-500 text-white flex items-center justify-center">
+        <div className="h-6 w-6 rounded-full bg-emerald-500 text-white flex items-center justify-center">
           <Check className="h-3.5 w-3.5" strokeWidth={3} />
         </div>
       </div>

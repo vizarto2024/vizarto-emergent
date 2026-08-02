@@ -29,7 +29,7 @@ const AIMatching = () => {
                 "Explainable results your hiring panel understands",
               ].map((t) => (
                 <div key={t} className="flex items-start gap-3">
-                  <div className="h-6 w-6 rounded-full bg-brand-100 text-brand-700 flex items-center justify-center mt-0.5 shrink-0">
+                  <div className="h-6 w-6 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center mt-0.5 shrink-0">
                     <CheckCircle2 className="h-4 w-4" />
                   </div>
                   <div className="text-slate-700">{t}</div>
@@ -92,7 +92,7 @@ const AIMatching = () => {
               </div>
 
               <div className="mt-5 rounded-xl bg-slate-900 text-white p-4">
-                <div className="text-xs text-brand-300 font-semibold uppercase tracking-wide">
+                <div className="text-xs text-emerald-300 font-semibold uppercase tracking-wide">
                   Why this match
                 </div>
                 <div className="mt-1.5 text-sm text-slate-200 leading-relaxed">

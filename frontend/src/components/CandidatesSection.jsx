@@ -45,7 +45,7 @@ export const CandidateCard = ({ c }) => (
     </div>
     <div className="mt-3 flex items-center justify-center gap-1.5">
       <div className="font-semibold text-slate-900">{c.name}</div>
-      {c.verified && <ShieldCheck className="h-4 w-4 text-brand-600" />}
+      {c.verified && <ShieldCheck className="h-4 w-4 text-emerald-600" />}
     </div>
     <div className="text-sm text-slate-500">{c.role}</div>
     <div className="mt-1.5 flex items-center justify-center gap-1 text-xs text-slate-400">

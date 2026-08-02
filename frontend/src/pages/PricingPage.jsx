@@ -133,7 +133,7 @@ const PricingPage = () => {
               { t: "Support that shows up", d: "Real humans, response in hours (SLA on higher tiers)." },
             ].map((f) => (
               <div key={f.t} className="rounded-2xl bg-white border border-slate-200 p-5">
-                <div className="h-9 w-9 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center mb-3">
+                <div className="h-9 w-9 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center mb-3">
                   <Check className="h-5 w-5" strokeWidth={2.5} />
                 </div>
                 <div className="font-semibold text-slate-900">{f.t}</div>
@@ -252,7 +252,7 @@ const PlanCard = ({ plan, annual, onCta, wide = false }) => {
         <ul className={`space-y-2.5 ${wide ? "md:grid md:grid-cols-2 md:gap-x-6 md:gap-y-2.5 md:space-y-0" : ""}`}>
           {plan.features.map((f) => (
             <li key={f} className="flex items-start gap-2.5">
-              <div className="h-5 w-5 rounded-full bg-brand-500 text-white flex items-center justify-center shrink-0 mt-0.5">
+              <div className="h-5 w-5 rounded-full bg-emerald-500 text-white flex items-center justify-center shrink-0 mt-0.5">
                 <Check className="h-3 w-3" strokeWidth={3} />
               </div>
               <span className="text-sm text-slate-700 leading-snug">{f}</span>

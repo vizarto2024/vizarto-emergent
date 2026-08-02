@@ -100,7 +100,7 @@ const Hero = () => {
             {/* Trust markers */}
             <div className="mt-8 flex flex-wrap items-center gap-6 text-sm text-slate-500">
               <div className="flex items-center gap-1.5">
-                <ShieldCheck className="h-4 w-4 text-brand-600" /> Verified talent
+                <ShieldCheck className="h-4 w-4 text-emerald-600" /> Verified talent
               </div>
               <div className="flex items-center gap-1.5">
                 <Zap className="h-4 w-4 text-brand-600" /> Shortlist in 5 min
