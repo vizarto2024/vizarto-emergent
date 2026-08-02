@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Landing from "./pages/Landing";
 import JobsPage from "./pages/JobsPage";
 import CandidatesPage from "./pages/CandidatesPage";
+import PricingPage from "./pages/PricingPage";
 import { Toaster } from "./components/ui/toaster";
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
           <Route path="/" element={<Landing />} />
           <Route path="/jobs" element={<JobsPage />} />
           <Route path="/candidates" element={<CandidatesPage />} />
+          <Route path="/pricing" element={<PricingPage />} />
         </Routes>
       </BrowserRouter>
       <Toaster />

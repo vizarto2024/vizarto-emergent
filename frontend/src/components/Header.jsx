@@ -104,7 +104,7 @@ const Header = () => {
 
             <NavItem to="/jobs" active={pathname === "/jobs"}>Jobs</NavItem>
             <NavItem to="/candidates" active={pathname === "/candidates"}>Talent</NavItem>
-            <NavItem to="/#pricing">Pricing</NavItem>
+            <NavItem to="/pricing" active={pathname === "/pricing"}>Pricing</NavItem>
           </nav>
 
           {/* Right actions */}
@@ -131,7 +131,7 @@ const Header = () => {
           <div className="px-5 py-4 space-y-3">
             <Link to="/jobs" className="block py-2 text-slate-700 font-medium">Browse Jobs</Link>
             <Link to="/candidates" className="block py-2 text-slate-700 font-medium">Search Talent</Link>
-            <a href="#pricing" className="block py-2 text-slate-700 font-medium">Pricing</a>
+            <Link to="/pricing" className="block py-2 text-slate-700 font-medium">Pricing</Link>
             <div className="pt-3 border-t border-slate-100 flex flex-col gap-2">
               <Button variant="ghost" className="w-full justify-start">Sign in</Button>
               <Button className="w-full bg-slate-900 hover:bg-slate-800 text-white rounded-full">
