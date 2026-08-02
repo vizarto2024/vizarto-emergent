@@ -137,7 +137,7 @@ const PostJobPage = () => {
         <Header />
         <section className="py-20">
           <div className="mx-auto max-w-xl px-5 text-center">
-            <div className="mx-auto h-16 w-16 rounded-2xl bg-emerald-500 text-white flex items-center justify-center">
+            <div className="mx-auto h-16 w-16 rounded-2xl bg-brand-500 text-white flex items-center justify-center">
               <Check className="h-8 w-8" strokeWidth={3} />
             </div>
             <h1 className="font-display mt-6 text-4xl font-bold text-slate-900">
@@ -150,7 +150,7 @@ const PostJobPage = () => {
             <div className="mt-8 flex justify-center gap-3">
               <Button
                 onClick={() => navigate("/candidates")}
-                className="bg-emerald-600 hover:bg-emerald-700 rounded-full px-6"
+                className="bg-brand-600 hover:bg-brand-700 rounded-full px-6"
               >
                 See top matches <ArrowRight className="h-4 w-4 ml-1" />
               </Button>
@@ -179,9 +179,9 @@ const PostJobPage = () => {
     <div className="bg-white min-h-screen">
       <Header />
 
-      <section className="bg-gradient-to-b from-emerald-50/60 to-white border-b border-slate-100 py-12">
+      <section className="bg-gradient-to-b from-brand-50/60 to-white border-b border-slate-100 py-12">
         <div className="mx-auto max-w-4xl px-5 lg:px-8">
-          <Badge className="bg-emerald-50 text-emerald-700 hover:bg-emerald-100 border-emerald-200 rounded-full">
+          <Badge className="bg-brand-50 text-brand-700 hover:bg-brand-100 border-brand-200 rounded-full">
             <Sparkles className="h-3.5 w-3.5 mr-1.5" /> Post a Job
           </Badge>
           <h1 className="font-display mt-4 text-4xl sm:text-5xl font-bold text-slate-900">
@@ -215,7 +215,7 @@ const PostJobPage = () => {
                       disabled={i > step}
                       className={`w-full flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm text-left transition-colors ${
                         active
-                          ? "bg-emerald-50 text-emerald-800 font-semibold"
+                          ? "bg-brand-50 text-brand-800 font-semibold"
                           : complete
                           ? "text-slate-700 hover:bg-slate-50"
                           : "text-slate-400 cursor-not-allowed"
@@ -224,9 +224,9 @@ const PostJobPage = () => {
                       <div
                         className={`h-7 w-7 rounded-lg flex items-center justify-center text-xs font-bold ${
                           active
-                            ? "bg-emerald-600 text-white"
+                            ? "bg-brand-600 text-white"
                             : complete
-                            ? "bg-emerald-500 text-white"
+                            ? "bg-brand-500 text-white"
                             : "bg-slate-100 text-slate-500"
                         }`}
                       >
@@ -243,7 +243,7 @@ const PostJobPage = () => {
           {/* Form */}
           <div className="rounded-3xl border border-slate-200 bg-white p-6 lg:p-8">
             <div className="hidden lg:flex items-center justify-between mb-5">
-              <div className="flex items-center gap-2 text-emerald-700">
+              <div className="flex items-center gap-2 text-brand-700">
                 <StepIcon className="h-5 w-5" />
                 <span className="font-display text-xl font-semibold">{STEPS[step].label}</span>
               </div>
@@ -280,7 +280,7 @@ const PostJobPage = () => {
               {step < STEPS.length - 1 ? (
                 <Button
                   onClick={next}
-                  className="bg-emerald-600 hover:bg-emerald-700 rounded-full px-6"
+                  className="bg-brand-600 hover:bg-brand-700 rounded-full px-6"
                 >
                   Continue <ArrowRight className="h-4 w-4 ml-1" />
                 </Button>
@@ -288,7 +288,7 @@ const PostJobPage = () => {
                 <Button
                   onClick={publish}
                   disabled={submitting}
-                  className="bg-emerald-600 hover:bg-emerald-700 rounded-full px-6 min-w-[160px]"
+                  className="bg-brand-600 hover:bg-brand-700 rounded-full px-6 min-w-[160px]"
                 >
                   {submitting ? (
                     <>
@@ -357,7 +357,7 @@ const RoleStep = ({ form, setField, errors }) => (
             <label
               key={m}
               className={`flex items-center gap-2 border rounded-lg px-3 py-2 text-sm cursor-pointer flex-1 ${
-                form.workMode === m ? "border-emerald-500 bg-emerald-50 text-emerald-800" : "border-slate-200"
+                form.workMode === m ? "border-brand-500 bg-brand-50 text-brand-800" : "border-slate-200"
               }`}
             >
               <RadioGroupItem value={m} className="sr-only" />
@@ -415,10 +415,10 @@ const RequirementsStep = ({ form, setField, skillInput, setSkillInput, addSkill,
           {form.skills.map((s) => (
             <span
               key={s}
-              className="inline-flex items-center gap-1 bg-emerald-50 text-emerald-800 border border-emerald-200 rounded-full px-3 py-1 text-sm"
+              className="inline-flex items-center gap-1 bg-brand-50 text-brand-800 border border-brand-200 rounded-full px-3 py-1 text-sm"
             >
               {s}
-              <button onClick={() => removeSkill(s)} className="hover:text-emerald-900">
+              <button onClick={() => removeSkill(s)} className="hover:text-brand-900">
                 <X className="h-3 w-3" />
               </button>
             </span>
@@ -469,7 +469,7 @@ const CompStep = ({ form, setField, errors }) => (
       <button
         onClick={() => setField("showSalary", !form.showSalary)}
         className={`h-6 w-11 rounded-full relative transition-colors ${
-          form.showSalary ? "bg-emerald-500" : "bg-slate-300"
+          form.showSalary ? "bg-brand-500" : "bg-slate-300"
         }`}
       >
         <span
@@ -518,7 +518,7 @@ const CompStep = ({ form, setField, errors }) => (
         type="checkbox"
         checked={form.equity}
         onChange={(e) => setField("equity", e.target.checked)}
-        className="h-4 w-4 accent-emerald-600"
+        className="h-4 w-4 accent-brand-600"
       />
       <div>
         <div className="text-sm font-semibold text-slate-900">Includes equity / ESOPs</div>
@@ -597,11 +597,11 @@ const ReviewStep = ({ form }) => {
       <ReviewRow label="Experience" value={`${form.minExp}–${form.maxExp} yrs · ${form.seniority}`} />
       <ReviewRow label="Compensation" value={`${salary}${form.equity ? " · Equity" : ""}`} />
       <ReviewRow label="Description" value={form.description || "—"} multi />
-      <div className="rounded-xl bg-emerald-50 border border-emerald-200 p-4 text-sm text-emerald-900">
+      <div className="rounded-xl bg-brand-50 border border-brand-200 p-4 text-sm text-brand-900">
         <div className="font-semibold flex items-center gap-2">
           <Sparkles className="h-4 w-4" /> AI matching starts instantly
         </div>
-        <div className="mt-1 text-emerald-800">
+        <div className="mt-1 text-brand-800">
           Once you publish, we'll rank 85,000+ candidates and surface your top matches within minutes.
         </div>
       </div>

@@ -15,7 +15,7 @@ const JobsSection = () => {
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
         <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-10">
           <div>
-            <div className="text-sm font-semibold uppercase tracking-widest text-emerald-700">
+            <div className="text-sm font-semibold uppercase tracking-widest text-brand-700">
               Featured openings
             </div>
             <h2 className="font-display mt-2 text-4xl sm:text-5xl font-bold text-slate-900">
@@ -23,7 +23,7 @@ const JobsSection = () => {
             </h2>
           </div>
           <Link to="/jobs">
-            <Button variant="ghost" className="text-emerald-700 hover:text-emerald-800 hover:bg-emerald-50">
+            <Button variant="ghost" className="text-brand-700 hover:text-brand-800 hover:bg-brand-50">
               View all jobs <ArrowRight className="h-4 w-4 ml-1" />
             </Button>
           </Link>
@@ -41,7 +41,7 @@ const JobsSection = () => {
                 className={`inline-flex items-center gap-2 rounded-full border px-4 py-2 text-sm transition-colors ${
                   activeCat === c.name
                     ? "bg-slate-900 text-white border-slate-900"
-                    : "bg-white text-slate-700 border-slate-200 hover:border-emerald-400 hover:text-emerald-700"
+                    : "bg-white text-slate-700 border-slate-200 hover:border-brand-400 hover:text-brand-700"
                 }`}
               >
                 <Icon className="h-4 w-4" />
@@ -68,7 +68,7 @@ const CategoryChip = ({ name, active, onClick }) => (
     className={`inline-flex items-center gap-2 rounded-full border px-4 py-2 text-sm transition-colors ${
       active
         ? "bg-slate-900 text-white border-slate-900"
-        : "bg-white text-slate-700 border-slate-200 hover:border-emerald-400 hover:text-emerald-700"
+        : "bg-white text-slate-700 border-slate-200 hover:border-brand-400 hover:text-brand-700"
     }`}
   >
     {name}
@@ -93,7 +93,7 @@ export const JobCard = ({ job }) => {
             onClick={() => setSaved(!saved)}
             className="h-8 w-8 rounded-full flex items-center justify-center hover:bg-slate-100 transition-colors"
           >
-            <Bookmark className={`h-4 w-4 ${saved ? "fill-emerald-600 text-emerald-600" : "text-slate-400"}`} />
+            <Bookmark className={`h-4 w-4 ${saved ? "fill-brand-600 text-brand-600" : "text-slate-400"}`} />
           </button>
         </div>
       </div>
@@ -139,7 +139,7 @@ export const JobCard = ({ job }) => {
                 strokeLinecap="round"
               />
             </svg>
-            <div className="absolute inset-0 flex items-center justify-center text-[10px] font-bold text-emerald-700">
+            <div className="absolute inset-0 flex items-center justify-center text-[10px] font-bold text-brand-700">
               {job.match}
             </div>
           </div>

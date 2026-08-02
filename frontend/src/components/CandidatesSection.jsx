@@ -10,7 +10,7 @@ const CandidatesSection = () => {
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
         <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-10">
           <div>
-            <div className="text-sm font-semibold uppercase tracking-widest text-emerald-700">
+            <div className="text-sm font-semibold uppercase tracking-widest text-brand-700">
               Featured talent
             </div>
             <h2 className="font-display mt-2 text-4xl sm:text-5xl font-bold text-slate-900">
@@ -18,7 +18,7 @@ const CandidatesSection = () => {
             </h2>
           </div>
           <Link to="/candidates">
-            <Button variant="ghost" className="text-emerald-700 hover:text-emerald-800 hover:bg-emerald-50">
+            <Button variant="ghost" className="text-brand-700 hover:text-brand-800 hover:bg-brand-50">
               View all candidates <ArrowRight className="h-4 w-4 ml-1" />
             </Button>
           </Link>
@@ -36,7 +36,7 @@ const CandidatesSection = () => {
 
 export const CandidateCard = ({ c }) => (
   <div className="lift rounded-2xl border border-slate-200 bg-white p-5 text-center relative overflow-hidden">
-    <div className="absolute top-3 right-3 flex items-center gap-1 bg-emerald-50 text-emerald-700 rounded-full px-2 py-1 text-xs font-semibold">
+    <div className="absolute top-3 right-3 flex items-center gap-1 bg-brand-50 text-brand-700 rounded-full px-2 py-1 text-xs font-semibold">
       {c.match}% match
     </div>
 
@@ -45,7 +45,7 @@ export const CandidateCard = ({ c }) => (
     </div>
     <div className="mt-3 flex items-center justify-center gap-1.5">
       <div className="font-semibold text-slate-900">{c.name}</div>
-      {c.verified && <ShieldCheck className="h-4 w-4 text-emerald-600" />}
+      {c.verified && <ShieldCheck className="h-4 w-4 text-brand-600" />}
     </div>
     <div className="text-sm text-slate-500">{c.role}</div>
     <div className="mt-1.5 flex items-center justify-center gap-1 text-xs text-slate-400">
@@ -64,7 +64,7 @@ export const CandidateCard = ({ c }) => (
       <Button variant="outline" size="sm" className="flex-1 rounded-full border-slate-300">
         View
       </Button>
-      <Button size="sm" className="flex-1 bg-emerald-600 hover:bg-emerald-700 rounded-full">
+      <Button size="sm" className="flex-1 bg-brand-600 hover:bg-brand-700 rounded-full">
         Invite
       </Button>
     </div>

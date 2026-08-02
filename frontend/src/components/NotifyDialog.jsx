@@ -57,7 +57,7 @@ const NotifyDialog = ({ open, onOpenChange, plan, audience }) => {
         {!done ? (
           <>
             <DialogHeader>
-              <div className="mx-auto h-12 w-12 rounded-2xl bg-emerald-100 text-emerald-700 flex items-center justify-center mb-2">
+              <div className="mx-auto h-12 w-12 rounded-2xl bg-brand-100 text-brand-700 flex items-center justify-center mb-2">
                 <Sparkles className="h-6 w-6" />
               </div>
               <DialogTitle className="text-center font-display text-2xl">
@@ -86,7 +86,7 @@ const NotifyDialog = ({ open, onOpenChange, plan, audience }) => {
               </div>
               <Button
                 type="submit"
-                className="w-full h-11 bg-emerald-600 hover:bg-emerald-700 rounded-full font-semibold"
+                className="w-full h-11 bg-brand-600 hover:bg-brand-700 rounded-full font-semibold"
               >
                 Notify me at launch
               </Button>
@@ -97,7 +97,7 @@ const NotifyDialog = ({ open, onOpenChange, plan, audience }) => {
           </>
         ) : (
           <div className="py-4 text-center">
-            <div className="mx-auto h-14 w-14 rounded-2xl bg-emerald-500 text-white flex items-center justify-center mb-4">
+            <div className="mx-auto h-14 w-14 rounded-2xl bg-brand-500 text-white flex items-center justify-center mb-4">
               <CheckCircle2 className="h-7 w-7" />
             </div>
             <h3 className="font-display text-2xl font-bold text-slate-900">

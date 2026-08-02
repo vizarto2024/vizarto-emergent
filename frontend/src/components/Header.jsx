@@ -17,7 +17,7 @@ const Header = () => {
     <Link
       to={to}
       className={`text-sm font-medium transition-colors ${
-        active ? "text-emerald-700" : "text-slate-600 hover:text-slate-900"
+        active ? "text-brand-700" : "text-slate-600 hover:text-slate-900"
       }`}
     >
       {children}
@@ -30,11 +30,11 @@ const Header = () => {
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2">
-            <div className="relative h-9 w-9 rounded-xl bg-gradient-to-br from-emerald-500 to-emerald-600 flex items-center justify-center shadow-sm">
+            <div className="relative h-9 w-9 rounded-xl bg-gradient-to-br from-brand-500 to-brand-600 flex items-center justify-center shadow-sm">
               <Sparkles className="h-5 w-5 text-white" strokeWidth={2.5} />
             </div>
             <div className="font-display text-xl font-bold text-slate-900">
-              vizarto<span className="text-emerald-600">.</span>
+              vizarto<span className="text-brand-600">.</span>
             </div>
           </Link>
 
@@ -47,7 +47,7 @@ const Header = () => {
               <DropdownMenuContent align="start" className="w-64">
                 <DropdownMenuItem asChild>
                   <Link to="/jobs" className="flex items-start gap-3 py-2">
-                    <Briefcase className="h-4 w-4 mt-0.5 text-emerald-600" />
+                    <Briefcase className="h-4 w-4 mt-0.5 text-brand-600" />
                     <div>
                       <div className="text-sm font-medium">Browse Jobs</div>
                       <div className="text-xs text-slate-500">15,000+ AI-matched roles</div>
@@ -56,7 +56,7 @@ const Header = () => {
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
                   <Link to="/candidates/signup" className="flex items-start gap-3 py-2">
-                    <Sparkles className="h-4 w-4 mt-0.5 text-emerald-600" />
+                    <Sparkles className="h-4 w-4 mt-0.5 text-brand-600" />
                     <div>
                       <div className="text-sm font-medium">Build Skill Profile</div>
                       <div className="text-xs text-slate-500">Import from LinkedIn / GitHub</div>
@@ -64,7 +64,7 @@ const Header = () => {
                   </Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem className="flex items-start gap-3 py-2">
-                  <BookOpen className="h-4 w-4 mt-0.5 text-emerald-600" />
+                  <BookOpen className="h-4 w-4 mt-0.5 text-brand-600" />
                   <div>
                     <div className="text-sm font-medium">Career Resources</div>
                     <div className="text-xs text-slate-500">Guides, interviews, salaries</div>
@@ -80,7 +80,7 @@ const Header = () => {
               <DropdownMenuContent align="start" className="w-64">
                 <DropdownMenuItem asChild>
                   <Link to="/candidates" className="flex items-start gap-3 py-2">
-                    <Users className="h-4 w-4 mt-0.5 text-emerald-600" />
+                    <Users className="h-4 w-4 mt-0.5 text-brand-600" />
                     <div>
                       <div className="text-sm font-medium">Search Candidates</div>
                       <div className="text-xs text-slate-500">85,000+ verified talent</div>
@@ -89,7 +89,7 @@ const Header = () => {
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
                   <Link to="/employers/post-job" className="flex items-start gap-3 py-2">
-                    <Building2 className="h-4 w-4 mt-0.5 text-emerald-600" />
+                    <Building2 className="h-4 w-4 mt-0.5 text-brand-600" />
                     <div>
                       <div className="text-sm font-medium">Post a Job</div>
                       <div className="text-xs text-slate-500">AI-crafted job descriptions</div>
@@ -97,7 +97,7 @@ const Header = () => {
                   </Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem className="flex items-start gap-3 py-2">
-                  <Sparkles className="h-4 w-4 mt-0.5 text-emerald-600" />
+                  <Sparkles className="h-4 w-4 mt-0.5 text-brand-600" />
                   <div>
                     <div className="text-sm font-medium">AI Matching Engine</div>
                     <div className="text-xs text-slate-500">See how ranking works</div>

@@ -29,9 +29,9 @@ const JobsPage = () => {
     <div className="bg-white min-h-screen">
       <Header />
 
-      <section className="bg-gradient-to-b from-emerald-50/60 to-white border-b border-slate-100 py-14">
+      <section className="bg-gradient-to-b from-brand-50/60 to-white border-b border-slate-100 py-14">
         <div className="mx-auto max-w-7xl px-5 lg:px-8">
-          <div className="text-sm font-semibold uppercase tracking-widest text-emerald-700">Job Board</div>
+          <div className="text-sm font-semibold uppercase tracking-widest text-brand-700">Job Board</div>
           <h1 className="font-display mt-2 text-4xl sm:text-5xl font-bold text-slate-900">
             Find your next role.
           </h1>
@@ -49,7 +49,7 @@ const JobsPage = () => {
                 className="border-0 focus-visible:ring-0 shadow-none h-11 px-0"
               />
             </div>
-            <Button className="h-12 bg-emerald-600 hover:bg-emerald-700 rounded-xl px-6">
+            <Button className="h-12 bg-brand-600 hover:bg-brand-700 rounded-xl px-6">
               Search
             </Button>
           </div>
@@ -62,7 +62,7 @@ const JobsPage = () => {
           <aside className="lg:col-span-1 space-y-6">
             <div className="rounded-2xl border border-slate-200 p-5">
               <div className="flex items-center gap-2 font-semibold text-slate-900 mb-4">
-                <SlidersHorizontal className="h-4 w-4 text-emerald-600" /> Filters
+                <SlidersHorizontal className="h-4 w-4 text-brand-600" /> Filters
               </div>
 
               <div>

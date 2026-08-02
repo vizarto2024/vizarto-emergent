@@ -22,11 +22,11 @@ html, body {
 }
 
 .blob-emerald {
-  background: radial-gradient(circle at 30% 30%, #a7f3d0, #6ee7b7 40%, transparent 70%);
+  background: radial-gradient(circle at 30% 30%, #FBCED3, #F4A2AC 40%, transparent 70%);
 }
 
 .blob-mint {
-  background: radial-gradient(circle at 60% 40%, #d1fae5, #a7f3d0 50%, transparent 75%);
+  background: radial-gradient(circle at 60% 40%, #FFE4E7, #FBCED3 50%, transparent 75%);
 }
 
 /* Marquee for company logos */
@@ -58,7 +58,7 @@ html, body {
 
 /* Custom selection */
 ::selection {
-  background: #10b981;
+  background: #E23744;
   color: white;
 }
 
@@ -68,5 +68,5 @@ html, body {
 }
 .lift:hover {
   transform: translateY(-3px);
-  box-shadow: 0 12px 32px -12px rgba(16, 185, 129, 0.25);
+  box-shadow: 0 12px 32px -12px rgba(226, 55, 68, 0.28);
 }

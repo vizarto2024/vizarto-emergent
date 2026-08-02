@@ -33,9 +33,9 @@ const CandidatesPage = () => {
     <div className="bg-white min-h-screen">
       <Header />
 
-      <section className="bg-gradient-to-b from-emerald-50/60 to-white border-b border-slate-100 py-14">
+      <section className="bg-gradient-to-b from-brand-50/60 to-white border-b border-slate-100 py-14">
         <div className="mx-auto max-w-7xl px-5 lg:px-8">
-          <div className="text-sm font-semibold uppercase tracking-widest text-emerald-700">Talent Pool</div>
+          <div className="text-sm font-semibold uppercase tracking-widest text-brand-700">Talent Pool</div>
           <h1 className="font-display mt-2 text-4xl sm:text-5xl font-bold text-slate-900">
             Discover verified talent.
           </h1>
@@ -53,7 +53,7 @@ const CandidatesPage = () => {
                 className="border-0 focus-visible:ring-0 shadow-none h-11 px-0"
               />
             </div>
-            <Button className="h-12 bg-emerald-600 hover:bg-emerald-700 rounded-xl px-6">
+            <Button className="h-12 bg-brand-600 hover:bg-brand-700 rounded-xl px-6">
               Search
             </Button>
           </div>
@@ -63,8 +63,8 @@ const CandidatesPage = () => {
               onClick={() => setOnlyVerified(!onlyVerified)}
               className={`inline-flex items-center gap-2 rounded-full px-3.5 py-1.5 text-sm border transition-colors ${
                 onlyVerified
-                  ? "bg-emerald-600 text-white border-emerald-600"
-                  : "bg-white text-slate-700 border-slate-200 hover:border-emerald-400"
+                  ? "bg-brand-600 text-white border-brand-600"
+                  : "bg-white text-slate-700 border-slate-200 hover:border-brand-400"
               }`}
             >
               <ShieldCheck className="h-4 w-4" /> Verified only

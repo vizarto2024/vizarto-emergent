@@ -46,12 +46,12 @@ const PricingPage = () => {
       <Header />
 
       {/* Hero */}
-      <section className="relative bg-gradient-to-b from-emerald-50/60 to-white pt-16 pb-10 overflow-hidden">
-        <div className="absolute -top-20 -left-20 w-72 h-72 rounded-full bg-emerald-100/50 blur-3xl" />
-        <div className="absolute -top-10 right-0 w-64 h-64 rounded-full bg-emerald-100/40 blur-3xl" />
+      <section className="relative bg-gradient-to-b from-brand-50/60 to-white pt-16 pb-10 overflow-hidden">
+        <div className="absolute -top-20 -left-20 w-72 h-72 rounded-full bg-brand-100/50 blur-3xl" />
+        <div className="absolute -top-10 right-0 w-64 h-64 rounded-full bg-brand-100/40 blur-3xl" />
 
         <div className="relative mx-auto max-w-6xl px-5 lg:px-8 text-center">
-          <Badge className="bg-emerald-50 text-emerald-700 hover:bg-emerald-100 border-emerald-200 rounded-full px-3 py-1 font-medium">
+          <Badge className="bg-brand-50 text-brand-700 hover:bg-brand-100 border-brand-200 rounded-full px-3 py-1 font-medium">
             <Sparkles className="h-3.5 w-3.5 mr-1.5" />
             {heading.eyebrow}
           </Badge>
@@ -87,12 +87,12 @@ const PricingPage = () => {
             <Switch
               checked={annual}
               onCheckedChange={setAnnual}
-              className="data-[state=checked]:bg-emerald-600"
+              className="data-[state=checked]:bg-brand-600"
             />
             <span className={`text-sm font-semibold ${annual ? "text-slate-900" : "text-slate-500"}`}>
               Annual
             </span>
-            <Badge className="bg-emerald-100 text-emerald-700 hover:bg-emerald-100 border-emerald-200 rounded-full">
+            <Badge className="bg-brand-100 text-brand-700 hover:bg-brand-100 border-brand-200 rounded-full">
               2 months free
             </Badge>
           </div>
@@ -120,7 +120,7 @@ const PricingPage = () => {
       {/* Comparison strip */}
       <section className="py-12 bg-slate-50/60 border-y border-slate-100">
         <div className="mx-auto max-w-5xl px-5 lg:px-8 text-center">
-          <div className="text-sm font-semibold uppercase tracking-widest text-emerald-700">
+          <div className="text-sm font-semibold uppercase tracking-widest text-brand-700">
             Why upgrade
           </div>
           <h2 className="font-display mt-2 text-3xl sm:text-4xl font-bold text-slate-900">
@@ -133,7 +133,7 @@ const PricingPage = () => {
               { t: "Support that shows up", d: "Real humans, response in hours (SLA on higher tiers)." },
             ].map((f) => (
               <div key={f.t} className="rounded-2xl bg-white border border-slate-200 p-5">
-                <div className="h-9 w-9 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center mb-3">
+                <div className="h-9 w-9 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center mb-3">
                   <Check className="h-5 w-5" strokeWidth={2.5} />
                 </div>
                 <div className="font-semibold text-slate-900">{f.t}</div>
@@ -148,7 +148,7 @@ const PricingPage = () => {
       <section className="py-16 bg-white">
         <div className="mx-auto max-w-3xl px-5 lg:px-8">
           <div className="text-center mb-10">
-            <div className="text-sm font-semibold uppercase tracking-widest text-emerald-700">FAQ</div>
+            <div className="text-sm font-semibold uppercase tracking-widest text-brand-700">FAQ</div>
             <h2 className="font-display mt-2 text-3xl sm:text-4xl font-bold text-slate-900">
               Answers before you ask.
             </h2>
@@ -191,13 +191,13 @@ const PlanCard = ({ plan, annual, onCta, wide = false }) => {
     <div
       className={`relative rounded-3xl border p-7 lg:p-8 flex flex-col ${
         plan.popular
-          ? "border-emerald-500 bg-white shadow-xl shadow-emerald-500/10"
+          ? "border-brand-500 bg-white shadow-xl shadow-brand-500/10"
           : "border-slate-200 bg-white"
       } ${wide ? "md:flex-row md:gap-8 md:items-start" : ""}`}
     >
       {plan.popular && (
         <div className="absolute top-0 right-0 overflow-hidden w-32 h-32 rounded-tr-3xl pointer-events-none">
-          <div className="absolute top-5 right-[-38px] rotate-45 bg-emerald-600 text-white text-[10px] font-bold tracking-widest px-10 py-1 shadow-md">
+          <div className="absolute top-5 right-[-38px] rotate-45 bg-brand-600 text-white text-[10px] font-bold tracking-widest px-10 py-1 shadow-md">
             MOST POPULAR
           </div>
         </div>
@@ -224,7 +224,7 @@ const PlanCard = ({ plan, annual, onCta, wide = false }) => {
             </div>
           )}
           {!isFree && !isCustom && !hidden && annual && plan.saves && (
-            <div className="text-xs font-semibold text-emerald-700 mt-1">
+            <div className="text-xs font-semibold text-brand-700 mt-1">
               saves ₹{plan.saves.toLocaleString("en-IN")} vs monthly
             </div>
           )}
@@ -235,7 +235,7 @@ const PlanCard = ({ plan, annual, onCta, wide = false }) => {
           onClick={() => onCta?.(plan)}
           className={`mt-6 w-full rounded-full h-11 font-semibold ${
             plan.popular
-              ? "bg-emerald-600 hover:bg-emerald-700 text-white"
+              ? "bg-brand-600 hover:bg-brand-700 text-white"
               : isFree
               ? "bg-slate-900 hover:bg-slate-800 text-white"
               : "bg-slate-900 hover:bg-slate-800 text-white"
@@ -252,7 +252,7 @@ const PlanCard = ({ plan, annual, onCta, wide = false }) => {
         <ul className={`space-y-2.5 ${wide ? "md:grid md:grid-cols-2 md:gap-x-6 md:gap-y-2.5 md:space-y-0" : ""}`}>
           {plan.features.map((f) => (
             <li key={f} className="flex items-start gap-2.5">
-              <div className="h-5 w-5 rounded-full bg-emerald-500 text-white flex items-center justify-center shrink-0 mt-0.5">
+              <div className="h-5 w-5 rounded-full bg-brand-500 text-white flex items-center justify-center shrink-0 mt-0.5">
                 <Check className="h-3 w-3" strokeWidth={3} />
               </div>
               <span className="text-sm text-slate-700 leading-snug">{f}</span>
@@ -297,7 +297,7 @@ const FAQItem = ({ q, a }) => {
       >
         <span className="font-semibold text-slate-900">{q}</span>
         <HelpCircle
-          className={`h-5 w-5 text-emerald-600 transition-transform ${open ? "rotate-45" : ""}`}
+          className={`h-5 w-5 text-brand-600 transition-transform ${open ? "rotate-45" : ""}`}
         />
       </button>
       {open && (

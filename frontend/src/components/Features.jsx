@@ -25,11 +25,11 @@ const Features = () => {
         </div>
 
         <div className="text-center max-w-2xl mx-auto">
-          <div className="text-sm font-semibold uppercase tracking-widest text-emerald-700">
+          <div className="text-sm font-semibold uppercase tracking-widest text-brand-700">
             Why Vizarto
           </div>
           <h2 className="font-display mt-3 text-4xl sm:text-5xl font-bold text-slate-900">
-            An entire hiring stack, <span className="text-emerald-600">rebuilt with AI.</span>
+            An entire hiring stack, <span className="text-brand-600">rebuilt with AI.</span>
           </h2>
           <p className="mt-4 text-slate-600">
             Skill graphs, transparent match scores, and fair ranking — so the best person for the role actually wins.
@@ -44,7 +44,7 @@ const Features = () => {
                 key={f.title}
                 className="lift group relative rounded-2xl border border-slate-200 bg-white p-6"
               >
-                <div className="h-11 w-11 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center group-hover:bg-emerald-600 group-hover:text-white transition-colors">
+                <div className="h-11 w-11 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center group-hover:bg-brand-600 group-hover:text-white transition-colors">
                   <Icon className="h-5 w-5" />
                 </div>
                 <h3 className="mt-5 font-display text-lg font-semibold text-slate-900">

@@ -21,15 +21,15 @@ const Hero = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left */}
           <div className="fade-up">
-            <Badge className="bg-emerald-50 text-emerald-700 hover:bg-emerald-100 border-emerald-200 rounded-full px-3 py-1 font-medium">
+            <Badge className="bg-brand-50 text-brand-700 hover:bg-brand-100 border-brand-200 rounded-full px-3 py-1 font-medium">
               <Sparkles className="h-3.5 w-3.5 mr-1.5" />
               AI Skill-Based Hiring · New
             </Badge>
 
             <h1 className="font-display mt-5 text-5xl sm:text-6xl lg:text-[68px] leading-[1.02] font-bold text-slate-900">
               Hire by <span className="relative inline-block">
-                <span className="relative z-10 text-emerald-600">skills,</span>
-                <span className="absolute inset-x-0 bottom-2 h-3 bg-emerald-100 -z-0 rounded"></span>
+                <span className="relative z-10 text-brand-600">skills,</span>
+                <span className="absolute inset-x-0 bottom-2 h-3 bg-brand-100 -z-0 rounded"></span>
               </span>
               <br />
               not by keywords.
@@ -62,7 +62,7 @@ const Hero = () => {
                 />
               </div>
               <Link to="/jobs">
-                <Button className="h-12 bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl px-6 w-full sm:w-auto">
+                <Button className="h-12 bg-brand-600 hover:bg-brand-700 text-white rounded-xl px-6 w-full sm:w-auto">
                   Search jobs
                   <ArrowRight className="h-4 w-4 ml-1" />
                 </Button>
@@ -73,14 +73,14 @@ const Hero = () => {
             <div className="mt-5 flex flex-col sm:flex-row gap-3">
               <Link to="/jobs" className="flex-1">
                 <div className="lift group rounded-2xl border border-slate-200 bg-white p-4 flex items-center gap-3 cursor-pointer">
-                  <div className="h-10 w-10 rounded-xl bg-emerald-50 text-emerald-700 flex items-center justify-center">
+                  <div className="h-10 w-10 rounded-xl bg-brand-50 text-brand-700 flex items-center justify-center">
                     <Search className="h-5 w-5" />
                   </div>
                   <div className="flex-1">
                     <div className="text-sm font-semibold text-slate-900">I’m looking for a job</div>
                     <div className="text-xs text-slate-500">Get AI-matched to top roles</div>
                   </div>
-                  <ArrowRight className="h-4 w-4 text-slate-400 group-hover:text-emerald-600 group-hover:translate-x-1 transition-transform" />
+                  <ArrowRight className="h-4 w-4 text-slate-400 group-hover:text-brand-600 group-hover:translate-x-1 transition-transform" />
                 </div>
               </Link>
               <Link to="/candidates" className="flex-1">
@@ -92,7 +92,7 @@ const Hero = () => {
                     <div className="text-sm font-semibold text-slate-900">I’m hiring talent</div>
                     <div className="text-xs text-slate-500">Find verified candidates</div>
                   </div>
-                  <ArrowRight className="h-4 w-4 text-slate-400 group-hover:text-emerald-600 group-hover:translate-x-1 transition-transform" />
+                  <ArrowRight className="h-4 w-4 text-slate-400 group-hover:text-brand-600 group-hover:translate-x-1 transition-transform" />
                 </div>
               </Link>
             </div>
@@ -100,10 +100,10 @@ const Hero = () => {
             {/* Trust markers */}
             <div className="mt-8 flex flex-wrap items-center gap-6 text-sm text-slate-500">
               <div className="flex items-center gap-1.5">
-                <ShieldCheck className="h-4 w-4 text-emerald-600" /> Verified talent
+                <ShieldCheck className="h-4 w-4 text-brand-600" /> Verified talent
               </div>
               <div className="flex items-center gap-1.5">
-                <Zap className="h-4 w-4 text-emerald-600" /> Shortlist in 5 min
+                <Zap className="h-4 w-4 text-brand-600" /> Shortlist in 5 min
               </div>
               <div className="flex items-center gap-1.5">
                 <Star className="h-4 w-4 text-amber-500 fill-amber-500" /> 4.9 / 5 rated
@@ -141,17 +141,17 @@ const HeroMatchCard = () => {
       </div>
 
       {/* Main match card */}
-      <div className="relative bg-white rounded-3xl shadow-2xl shadow-emerald-500/10 border border-slate-100 p-6 max-w-md ml-auto">
+      <div className="relative bg-white rounded-3xl shadow-2xl shadow-brand-500/10 border border-slate-100 p-6 max-w-md ml-auto">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <div className="h-8 w-8 rounded-full bg-emerald-500 flex items-center justify-center">
+            <div className="h-8 w-8 rounded-full bg-brand-500 flex items-center justify-center">
               <Sparkles className="h-4 w-4 text-white" />
             </div>
-            <div className="text-xs font-semibold uppercase tracking-wide text-emerald-700">
+            <div className="text-xs font-semibold uppercase tracking-wide text-brand-700">
               AI Match
             </div>
           </div>
-          <div className="text-2xl font-bold text-emerald-600">96%</div>
+          <div className="text-2xl font-bold text-brand-600">96%</div>
         </div>
 
         <div className="mt-4 flex items-center gap-3">
@@ -177,7 +177,7 @@ const HeroMatchCard = () => {
               </div>
               <div className="h-1.5 bg-slate-100 rounded-full overflow-hidden">
                 <div
-                  className="h-full bg-gradient-to-r from-emerald-400 to-emerald-600 rounded-full"
+                  className="h-full bg-gradient-to-r from-brand-400 to-brand-600 rounded-full"
                   style={{ width: `${s.pct}%` }}
                 />
               </div>
@@ -190,7 +190,7 @@ const HeroMatchCard = () => {
             <div className="text-xs text-slate-500">Match for</div>
             <div className="text-sm font-semibold text-slate-900">Senior FE @ Brightform</div>
           </div>
-          <Button size="sm" className="bg-emerald-600 hover:bg-emerald-700 rounded-full">
+          <Button size="sm" className="bg-brand-600 hover:bg-brand-700 rounded-full">
             Invite
           </Button>
         </div>

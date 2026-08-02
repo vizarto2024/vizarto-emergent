@@ -92,7 +92,7 @@ const Cell = ({ value }) => {
   if (value === true) {
     return (
       <div className="flex justify-center">
-        <div className="h-6 w-6 rounded-full bg-emerald-500 text-white flex items-center justify-center">
+        <div className="h-6 w-6 rounded-full bg-brand-500 text-white flex items-center justify-center">
           <Check className="h-3.5 w-3.5" strokeWidth={3} />
         </div>
       </div>
@@ -117,7 +117,7 @@ const PlanComparison = ({ audience }) => {
     <section className="py-16 lg:py-20 bg-white">
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
         <div className="text-center max-w-2xl mx-auto mb-10">
-          <div className="text-sm font-semibold uppercase tracking-widest text-emerald-700">
+          <div className="text-sm font-semibold uppercase tracking-widest text-brand-700">
             Compare plans
           </div>
           <h2 className="font-display mt-2 text-3xl sm:text-4xl font-bold text-slate-900">
@@ -137,13 +137,13 @@ const PlanComparison = ({ audience }) => {
                     <th
                       key={c.key}
                       className={`px-4 py-4 text-sm font-bold ${
-                        c.popular ? "text-emerald-700" : "text-slate-900"
+                        c.popular ? "text-brand-700" : "text-slate-900"
                       }`}
                     >
                       <div className="flex flex-col items-center gap-1">
                         <span>{c.name}</span>
                         {c.popular && (
-                          <span className="text-[10px] font-semibold tracking-wider text-emerald-600 bg-emerald-50 border border-emerald-200 rounded-full px-2 py-0.5">
+                          <span className="text-[10px] font-semibold tracking-wider text-brand-600 bg-brand-50 border border-brand-200 rounded-full px-2 py-0.5">
                             POPULAR
                           </span>
                         )}

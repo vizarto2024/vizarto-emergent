@@ -28,11 +28,11 @@ const Footer = () => {
           {/* Brand */}
           <div className="lg:col-span-2">
             <div className="flex items-center gap-2">
-              <div className="h-9 w-9 rounded-xl bg-gradient-to-br from-emerald-500 to-emerald-600 flex items-center justify-center">
+              <div className="h-9 w-9 rounded-xl bg-gradient-to-br from-brand-500 to-brand-600 flex items-center justify-center">
                 <Sparkles className="h-5 w-5 text-white" strokeWidth={2.5} />
               </div>
               <div className="font-display text-xl font-bold text-slate-900">
-                vizarto<span className="text-emerald-600">.</span>
+                vizarto<span className="text-brand-600">.</span>
               </div>
             </div>
             <p className="mt-4 text-sm text-slate-600 max-w-xs">
@@ -43,7 +43,7 @@ const Footer = () => {
                 <a
                   key={i}
                   href="#"
-                  className="h-9 w-9 rounded-full border border-slate-200 flex items-center justify-center text-slate-500 hover:text-emerald-600 hover:border-emerald-300 transition-colors"
+                  className="h-9 w-9 rounded-full border border-slate-200 flex items-center justify-center text-slate-500 hover:text-brand-600 hover:border-brand-300 transition-colors"
                 >
                   <Icon className="h-4 w-4" />
                 </a>
@@ -57,7 +57,7 @@ const Footer = () => {
               <ul className="mt-4 space-y-2.5">
                 {col.links.map((l) => (
                   <li key={l}>
-                    <a href="#" className="text-sm text-slate-600 hover:text-emerald-700 transition-colors">
+                    <a href="#" className="text-sm text-slate-600 hover:text-brand-700 transition-colors">
                       {l}
                     </a>
                   </li>
