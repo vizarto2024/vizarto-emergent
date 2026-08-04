@@ -16,7 +16,7 @@ function App() {
 
   return (
     <div className="App">
-      <BrowserRouter>
+      <BrowserRouter basename="/vizarto-emergent">
         <Routes>
           <Route path="/" element={<Landing />} />
           <Route path="/jobs" element={<JobsPage />} />
