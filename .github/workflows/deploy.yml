@@ -27,13 +27,13 @@ jobs:
       - name: Install and Build
         working-directory: ./frontend
         run: |
-          npm install --legacy-peer-deps
+          npm install --force
           npm run build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './frontend/dist' # Change 'dist' to 'build' if your framework uses a build folder
+          path: './frontend/build'
 
       - name: Deploy to GitHub Pages
         id: deployment
